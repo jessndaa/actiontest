@@ -23,5 +23,3 @@ jobs:
         run: npm ci
       - name: npm run test
         run: npm run test
-      - name: echo secret
-        run: echo "hello git hub action"
