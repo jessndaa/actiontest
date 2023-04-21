@@ -2,7 +2,7 @@ name: Check all node
 
 on:
   push:
-    banches: [main]
+    branches: [main]
 
 jobs:
   echo_github_gestristed:
