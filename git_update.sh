@@ -1,7 +1,7 @@
 #!/bin/bash
 
 VERSION="v0.1.0"
-
+ddd
 # get parameters
 while getopts v: flag
 do
