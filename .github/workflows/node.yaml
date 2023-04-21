@@ -3,6 +3,8 @@ name: Check all node
 on:
   push:
     branches: [main]
+  pull_request:
+    branches: [main]
 
 jobs:
   echo_github_gestristed:
@@ -12,5 +14,7 @@ jobs:
     steps:
       - name: Check out repo's default branch
         uses: actions/checkout@v3
+      - name: test sum application
+        run: npm run test
       - name: echo secret
         run: echo "hello git hub action"
