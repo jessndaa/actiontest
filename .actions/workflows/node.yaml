@@ -1,0 +1,21 @@
+name: Check all node 
+
+on:
+  push:
+    banches: [main]
+
+jobs:
+  echo_github_gestristed:
+    name: echo git hub
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo's default branch
+        uses: actions/checkout@v3
+      - name: Setup Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 16.13.x
+          cache: npm
+      - name: echo secret
+        run: echo "hello git hub action"
