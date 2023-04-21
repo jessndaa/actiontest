@@ -23,5 +23,4 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - uses: olegtarasov/get-tag@v2.1.2
-        run: |
-          echo $GIT_TAG_NAME
+        run: echo $GIT_TAG_NAME
