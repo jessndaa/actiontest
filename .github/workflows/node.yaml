@@ -14,7 +14,10 @@ jobs:
     steps:
       - name: Check out repo's default branch
         uses: actions/checkout@v3
+      - name: actions/setup-node@v2
+        with:
+          node-version: 14.x
       - name: test sum application
         run: npm run test
       - name: echo secret
-        run: echo "hello git hub action"
+        run: echo ${{secrets.TOKEN}}
